@@ -1,0 +1,13 @@
+seller:
+  address:  0xC9eBb4A38f736a5Ea336843467d1788576cE3756
+  privatekey: b86cb0b45b7b9c84efadabd4540ce21b6e1674d5aac64a0ca07ecf985083bd6e
+
+buyer:
+  address: 0x5AC8f73AD19838031cc6c7b5EE20B95764B2Cf68
+  privatekey: b25ed2cefddbae8e752574f0d60fc2de210f1f56604145be1b623c1a63207b2a
+
+contract:
+  address: 0x?????
+
+node:
+  url: wss://sepolia.infura.io/ws/v3/??????
