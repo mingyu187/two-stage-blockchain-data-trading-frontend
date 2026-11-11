@@ -1,0 +1,1181 @@
+/* =========================================================
+   Global
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  min-width: 1200px;
+  font-family:
+    Inter,
+    "Segoe UI",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
+  background: #f4f7fb;
+  color: #10213b;
+}
+
+button {
+  font-family: inherit;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* =========================================================
+   Common
+========================================================= */
+
+.section-eyebrow {
+  color: #7083a3;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #20b486;
+  display: inline-block;
+  box-shadow: 0 0 0 4px rgba(32, 180, 134, 0.08);
+}
+
+/* =========================================================
+   HOME PAGE
+========================================================= */
+
+.home-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(68, 103, 224, 0.06),
+      transparent 32%
+    ),
+    #f4f7fb;
+}
+
+/* ---------- Header ---------- */
+
+.home-header {
+  height: 82px;
+  padding: 0 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e3e9f2;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+  background: #3159d9;
+  color: white;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  box-shadow: 0 8px 18px rgba(49, 89, 217, 0.2);
+}
+
+.brand-title {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.brand-subtitle {
+  margin-top: 3px;
+  color: #8492a9;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.network-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 16px;
+
+  border: 1px solid #dce4ef;
+  border-radius: 999px;
+
+  background: white;
+  color: #61728e;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ---------- Main ---------- */
+
+.home-main {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 78px 0 90px;
+}
+
+.hero-label {
+  color: #7183a0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.home-main h1 {
+  margin: 20px 0 18px;
+
+  color: #0d1c33;
+
+  font-size: 54px;
+  line-height: 1.18;
+  letter-spacing: -2px;
+}
+
+.hero-description {
+  margin: 0;
+
+  color: #71809a;
+  font-size: 17px;
+}
+
+/* ---------- Role cards ---------- */
+
+.role-grid {
+  margin-top: 58px;
+
+  display: grid;
+  grid-template-columns: 1fr 190px 1fr;
+  align-items: center;
+  gap: 36px;
+}
+
+.role-card {
+  min-height: 190px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 34px;
+
+  border: 1px solid #dce4f0;
+  border-radius: 22px;
+
+  background: white;
+  color: inherit;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #b9c9ee;
+
+  box-shadow:
+    0 18px 42px rgba(38, 65, 113, 0.1);
+}
+
+.role-icon {
+  width: 72px;
+  height: 72px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: #edf2ff;
+  color: #3561d7;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.buyer-icon {
+  background: #eef8f6;
+  color: #229c81;
+}
+
+.role-content {
+  margin-left: 26px;
+}
+
+.role-label {
+  margin-bottom: 7px;
+
+  color: #7485a0;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.role-content h2 {
+  margin: 0 0 8px;
+
+  color: #12223b;
+
+  font-size: 28px;
+}
+
+.role-content p {
+  margin: 0;
+
+  color: #75839a;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.role-arrow {
+  margin-left: auto;
+
+  color: #91a0b8;
+
+  font-size: 30px;
+}
+
+/* ---------- Blockchain center ---------- */
+
+.blockchain-center {
+  text-align: center;
+}
+
+.blockchain-icon {
+  width: 62px;
+  height: 62px;
+
+  margin: 0 auto 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #172235;
+  color: white;
+
+  font-size: 26px;
+
+  box-shadow:
+    0 10px 28px rgba(23, 34, 53, 0.18);
+}
+
+.blockchain-title {
+  color: #15233a;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.blockchain-network {
+  margin-top: 7px;
+
+  color: #78879e;
+
+  font-size: 13px;
+}
+
+/* ---------- Home process ---------- */
+
+.home-process {
+  margin-top: 70px;
+
+  padding: 34px 38px;
+
+  border: 1px solid #dce4ef;
+  border-radius: 20px;
+
+  background: white;
+}
+
+.home-process h2 {
+  margin: 10px 0 26px;
+
+  font-size: 25px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.process-item {
+  padding: 22px;
+
+  border: 1px solid #e3e9f1;
+  border-radius: 14px;
+
+  background: #fafcff;
+}
+
+.process-item span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #3862d5;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.process-item strong {
+  font-size: 14px;
+}
+
+/* =========================================================
+   DASHBOARD
+========================================================= */
+
+.dashboard {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: #f4f7fb;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 270px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 28px 18px;
+
+  background: #101827;
+  color: white;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+
+  padding: 0 10px;
+}
+
+.sidebar-logo {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #3159d9;
+
+  font-size: 21px;
+}
+
+.sidebar-title {
+  margin-left: 12px;
+
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.sidebar-subtitle {
+  margin-left: 12px;
+  margin-top: 3px;
+
+  color: #8190a9;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.sidebar-divider {
+  height: 1px;
+
+  margin: 27px 4px 24px;
+
+  background: #273145;
+}
+
+.account-card {
+  display: flex;
+  align-items: center;
+
+  padding: 16px;
+
+  border-radius: 15px;
+
+  background: #1d2738;
+}
+
+.account-avatar {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #3561d7;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.account-card strong {
+  display: block;
+
+  margin-left: 13px;
+
+  font-size: 13px;
+}
+
+.account-card span {
+  display: block;
+
+  margin-left: 13px;
+  margin-top: 4px;
+
+  color: #8491a7;
+
+  font-size: 11px;
+}
+
+.sidebar-section-title {
+  margin: 32px 8px 13px;
+
+  color: #71809b;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-nav-item {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 14px 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: transparent;
+
+  color: #9aa7bd;
+
+  text-align: left;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.sidebar-nav-item span:first-child {
+  width: 27px;
+
+  font-size: 14px;
+}
+
+.sidebar-nav-item:hover {
+  background: #182235;
+  color: white;
+}
+
+.sidebar-nav-item.active {
+  background: #3159d9;
+  color: white;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+}
+
+.network-card {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 13px;
+
+  background: #192335;
+
+  color: white;
+
+  cursor: pointer;
+
+  text-align: left;
+}
+
+.network-card .status-dot {
+  margin-right: 10px;
+}
+
+.network-card strong {
+  display: block;
+
+  font-size: 12px;
+}
+
+.network-card span:last-child {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #75839a;
+
+  font-size: 10px;
+}
+
+/* =========================================================
+   DASHBOARD MAIN
+========================================================= */
+
+.dashboard-main {
+  width: calc(100% - 270px);
+
+  margin-left: 270px;
+
+  padding: 34px 64px 80px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 36px;
+}
+
+.dashboard-header h1 {
+  margin: 10px 0 7px;
+
+  color: #0e1e36;
+
+  font-size: 40px;
+  letter-spacing: -1.5px;
+}
+
+.dashboard-header p {
+  margin: 0;
+
+  color: #78869e;
+
+  font-size: 14px;
+}
+
+.connection-badge {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 11px 16px;
+
+  border: 1px solid #dbe3ee;
+  border-radius: 999px;
+
+  background: white;
+
+  color: #566780;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   PANEL
+========================================================= */
+
+.panel {
+  padding: 30px 32px;
+
+  border: 1px solid #dce4ef;
+  border-radius: 20px;
+
+  background: white;
+
+  box-shadow:
+    0 12px 35px rgba(35, 55, 90, 0.035);
+}
+
+.panel-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 26px;
+}
+
+.panel-heading h2 {
+  margin: 0 0 5px;
+
+  font-size: 21px;
+}
+
+.panel-heading p {
+  margin: 0;
+
+  color: #8290a6;
+
+  font-size: 13px;
+}
+
+.ready-badge {
+  padding: 8px 12px;
+
+  border-radius: 8px;
+
+  background: #edf8f4;
+
+  color: #239774;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* =========================================================
+   INFO CARDS
+========================================================= */
+
+.info-grid {
+  display: grid;
+  gap: 14px;
+
+  margin-bottom: 28px;
+}
+
+.four-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.info-card {
+  padding: 18px 20px;
+
+  border: 1px solid #e0e7f0;
+  border-radius: 13px;
+
+  background: #fbfcfe;
+}
+
+.info-card span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #8190a7;
+
+  font-size: 11px;
+}
+
+.info-card strong {
+  color: #14243c;
+
+  font-size: 15px;
+}
+
+/* =========================================================
+   SAMPLE SECTION
+========================================================= */
+
+.sample-section,
+.buyer-sample-section {
+  padding: 25px;
+
+  border: 1px solid #e0e7f0;
+  border-radius: 17px;
+
+  background: #fbfcfe;
+}
+
+.sample-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 19px;
+}
+
+.sample-header h3 {
+  margin: 0 0 5px;
+
+  font-size: 17px;
+}
+
+.sample-header p {
+  margin: 0;
+
+  color: #8491a7;
+
+  font-size: 12px;
+}
+
+.sample-count {
+  padding: 8px 11px;
+
+  border-radius: 7px;
+
+  background: #eef3fb;
+
+  color: #647795;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* =========================================================
+   IMAGE GRID
+========================================================= */
+
+.image-grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 14px;
+}
+
+.image-card {
+  position: relative;
+
+  height: 190px;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  background: #e9edf4;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover img {
+  transform: scale(1.04);
+}
+
+.image-label {
+  position: absolute;
+
+  left: 10px;
+  bottom: 10px;
+
+  padding: 5px 8px;
+
+  border-radius: 6px;
+
+  background: rgba(10, 18, 31, 0.72);
+
+  color: white;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* =========================================================
+   BUYER LOCKED AREA
+========================================================= */
+
+.locked-sample-box {
+  min-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px dashed #cbd6e5;
+  border-radius: 15px;
+
+  background: #f7f9fc;
+
+  text-align: center;
+}
+
+.locked-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 14px;
+
+  border-radius: 50%;
+
+  background: #e9eef7;
+
+  font-size: 23px;
+}
+
+.locked-sample-box h3 {
+  margin: 0 0 8px;
+
+  font-size: 16px;
+}
+
+.locked-sample-box p {
+  margin: 0;
+
+  color: #8190a6;
+
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.locked-status {
+  margin-top: 18px;
+
+  padding: 8px 12px;
+
+  border-radius: 7px;
+
+  background: #eef2f7;
+
+  color: #728199;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.challenge-success {
+  margin-bottom: 15px;
+
+  padding: 11px 14px;
+
+  border-radius: 9px;
+
+  background: #edf8f4;
+
+  color: #208b70;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.challenge-success span {
+  margin-right: 6px;
+}
+
+/* =========================================================
+   TRADING PROCESS
+========================================================= */
+
+.trading-section {
+  margin-top: 38px;
+}
+
+.trading-section > h2 {
+  margin: 9px 0 5px;
+
+  font-size: 27px;
+}
+
+.section-description {
+  margin: 0 0 22px;
+
+  color: #8190a7;
+
+  font-size: 13px;
+}
+
+.step-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 14px;
+}
+
+.buyer-step-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 14px;
+}
+
+/* =========================================================
+   TRADE STEP
+========================================================= */
+
+.trade-step {
+  min-height: 285px;
+
+  padding: 23px;
+
+  border: 1px solid #dce4ef;
+  border-radius: 17px;
+
+  background: white;
+
+  position: relative;
+}
+
+.trade-step-active {
+  border-color: #b9c9f3;
+
+  box-shadow:
+    0 8px 25px rgba(52, 87, 170, 0.06);
+}
+
+.step-number {
+  color: #3561d7;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.step-eyebrow {
+  margin-top: 25px;
+
+  color: #8391a7;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+.trade-step h3 {
+  margin: 9px 0 8px;
+
+  font-size: 17px;
+}
+
+.trade-step p {
+  min-height: 43px;
+
+  margin: 0;
+
+  color: #7c899e;
+
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* ---------- Buttons ---------- */
+
+.step-button {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 11px 14px;
+
+  border: 1px solid #d5deec;
+  border-radius: 9px;
+
+  background: white;
+
+  color: #3c4d68;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.step-button:hover:not(:disabled) {
+  border-color: #3159d9;
+
+  color: #3159d9;
+
+  background: #f7f9ff;
+}
+
+.step-button.primary {
+  border-color: #3561d7;
+
+  background: #3561d7;
+
+  color: white;
+}
+
+.step-button.primary:hover {
+  background: #294fc8;
+
+  color: white;
+}
+
+.step-button:disabled {
+  opacity: 0.45;
+
+  cursor: not-allowed;
+}
+
+/* ---------- Status ---------- */
+
+.waiting-badge,
+.step-status {
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding: 7px 10px;
+
+  border-radius: 7px;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.waiting-badge,
+.step-status.locked {
+  background: #f4f6f9;
+
+  color: #8793a6;
+}
+
+.step-status.current {
+  background: #edf2ff;
+
+  color: #3561d7;
+}
+
+.step-status.ready {
+  background: #fff6df;
+
+  color: #b17b14;
+}
+
+.step-status.done {
+  background: #edf8f4;
+
+  color: #218e72;
+}
+
+.step-success {
+  margin-top: 15px;
+
+  padding: 10px 12px;
+
+  border-radius: 8px;
+
+  background: #edf8f4;
+
+  color: #23896f;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media (max-width: 1400px) {
+  .dashboard-main {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  .image-card {
+    height: 175px;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    min-width: 1100px;
+  }
+
+  .home-main {
+    width: 1000px;
+  }
+
+  .role-grid {
+    grid-template-columns: 1fr 150px 1fr;
+    gap: 20px;
+  }
+
+  .dashboard-main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
